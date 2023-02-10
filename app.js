@@ -20,7 +20,7 @@ function startGame(){
     squares[appleIndex].classList.remove('apple')
     clearInterval(interval) 
     score = 0
-    //random apple
+    //randomApple()
     direction = 1
     scoreDisplay.innerHTML = score
     intervalTime =1000
@@ -99,6 +99,7 @@ function control(e){
 }
 document.addEventListener('keyup', control) // on every press, snake direction moves
 startBtn.addEventListener('click', startGame)
+//startGame()
 
 })
 
